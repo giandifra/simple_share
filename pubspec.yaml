@@ -1,5 +1,5 @@
 name: simple_share
-description: A Flutter plugin for share image 
+description: A Flutter plugin for share file (image, PDF, video, ecc) or text.
 version: 0.0.1
 author: Gian Marco Di Francesco <difrancescogianmarco@gmail.com>
 homepage: https://github.com/giandifra/simple_share

@@ -1,6 +1,6 @@
 # Simple Share
 
-Flutter plugin to share file or text.
+A Flutter plugin for share file (image, PDF, video, ecc) or text.
 
 ## Installation
 
