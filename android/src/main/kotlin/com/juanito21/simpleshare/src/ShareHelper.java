@@ -4,7 +4,8 @@ import io.flutter.plugin.common.PluginRegistry.Registrar;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
-import android.support.v4.app.ShareCompat;
+import androidx.core.app.ShareCompat;
+
 import android.net.Uri;
 import java.util.Map;
 import java.util.List;
