@@ -17,10 +17,11 @@ public class ShareHelper {
 
     public ShareHelper(Registrar registrar) {
         this.registrar = registrar;
-        this.intentBuilder = ShareCompat.IntentBuilder.from(this.registrar.activity());
+        // this.intentBuilder = ShareCompat.IntentBuilder.from(this.registrar.activity());
     }
 
     public void share(Map params) {
+        this.intentBuilder = ShareCompat.IntentBuilder.from(this.registrar.activity());
         this.params = params;
         if (checkKey("title")) {
             String title = (String) params.get("title");
