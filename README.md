@@ -25,7 +25,7 @@ For share text with subject (like in Gmail)
 
 ```SimpleShare.share(msg: "My message"", subject: "subject example");```
 
-##Issues
+## Issues
 
 For this iOS error:
 
