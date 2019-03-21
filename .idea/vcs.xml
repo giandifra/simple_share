@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/example/ios/.symlinks/plugins/file_picker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/example/ios/.symlinks/plugins/simple_share" vcs="Git" />
   </component>
 </project>

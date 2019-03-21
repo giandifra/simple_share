@@ -3,6 +3,7 @@ package io.flutter.plugins;
 import io.flutter.plugin.common.PluginRegistry;
 import com.mr.flutter.plugin.filepicker.FilePickerPlugin;
 import io.flutter.plugins.imagepicker.ImagePickerPlugin;
+import io.flutter.plugins.pathprovider.PathProviderPlugin;
 import com.juanito21.simpleshare.SimpleSharePlugin;
 
 /**
@@ -15,6 +16,7 @@ public final class GeneratedPluginRegistrant {
     }
     FilePickerPlugin.registerWith(registry.registrarFor("com.mr.flutter.plugin.filepicker.FilePickerPlugin"));
     ImagePickerPlugin.registerWith(registry.registrarFor("io.flutter.plugins.imagepicker.ImagePickerPlugin"));
+    PathProviderPlugin.registerWith(registry.registrarFor("io.flutter.plugins.pathprovider.PathProviderPlugin"));
     SimpleSharePlugin.registerWith(registry.registrarFor("com.juanito21.simpleshare.SimpleSharePlugin"));
   }
 

@@ -2,9 +2,7 @@ import Flutter
 import UIKit
 
 public class SwiftSimpleSharePlugin: NSObject, FlutterPlugin {
-
-    let controller : FlutterViewController = UIApplication.shared.keyWindow?.rootViewController as! FlutterViewController
-
+    
     public static func register(with registrar: FlutterPluginRegistrar) {
         let channel = FlutterMethodChannel(name: "com.juanito21.simpleShare/share", binaryMessenger: registrar.messenger())
         let instance = SwiftSimpleSharePlugin()
@@ -18,7 +16,6 @@ public class SwiftSimpleSharePlugin: NSObject, FlutterPlugin {
             let args = call.arguments as? [String: Any?]
             
             let title = args!["title"] as? String
-            //let message = args!["message"] as? String
             let fileUrl = args!["uri"] as? String
             
             var sharedItems : Array<Any> = Array()
@@ -54,7 +51,7 @@ public class SwiftSimpleSharePlugin: NSObject, FlutterPlugin {
                 activityViewController.setValue(title, forKeyPath: "subject");
             }
             
-            controller.present(activityViewController, animated: true, completion: nil)
+            UIApplication.shared.keyWindow?.rootViewController?.present(activityViewController, animated: true, completion: nil)
             
             result(nil)
             

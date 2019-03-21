@@ -52,7 +52,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   SimpleShare.share(
                       uri: uri.toString(),
                       title: "Share my file",
-                      msg: "My message");
+                      msg: "My message",
+                  );
                 }
               },
               child: Text('Share file!'),
