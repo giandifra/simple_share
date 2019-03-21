@@ -4,7 +4,8 @@ import io.flutter.plugin.common.PluginRegistry.Registrar;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
-import android.support.v4.app.ShareCompat;
+import androidx.core.app.ShareCompat;
+
 import android.net.Uri;
 import java.util.Map;
 import java.util.List;
@@ -16,10 +17,11 @@ public class ShareHelper {
 
     public ShareHelper(Registrar registrar) {
         this.registrar = registrar;
-        this.intentBuilder = ShareCompat.IntentBuilder.from(this.registrar.activity());
+        // this.intentBuilder = ShareCompat.IntentBuilder.from(this.registrar.activity());
     }
 
     public void share(Map params) {
+        this.intentBuilder = ShareCompat.IntentBuilder.from(this.registrar.activity());
         this.params = params;
         if (checkKey("title")) {
             String title = (String) params.get("title");

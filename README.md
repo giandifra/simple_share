@@ -30,3 +30,7 @@ For share text with subject (like in Gmail)
 
 See the [example application](https://github.com/giandifra/simple_share/tree/master/example) source
 for a complete sample app using the Simple RSA encryption.
+
+## TODO
+- [ ] fix this: Note: C:\Users\David\mvp\gjapp\simple_share\android\src\main\kotlin\com\juanito21\simpleshare\src\FileHelper.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
