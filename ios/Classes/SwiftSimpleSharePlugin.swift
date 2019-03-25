@@ -44,8 +44,15 @@ public class SwiftSimpleSharePlugin: NSObject, FlutterPlugin {
             
             
             let activityViewController = UIActivityViewController(activityItems: sharedItems, applicationActivities: nil)
-            
-            //            activityViewController.popoverPresentationController?.sourceView = self.viewController?.view // so that iPads won't crash
+
+            if activityViewController.modalPresentationStyle == .popover {
+                if let topController = UIApplication.shared.keyWindow?.rootViewController {
+                    if let presentedView = topController.view {
+                        activityViewController.popoverPresentationController?.sourceView = presentedView // so that iPads won't crash
+                        activityViewController.popoverPresentationController?.sourceRect = CGRect(x: presentedView.bounds.midX, y: presentedView.bounds.midY, width: 0, height: 0)
+                    }
+                }
+            }
             
             if (title != nil && title != "") {
                 activityViewController.setValue(title, forKeyPath: "subject");
