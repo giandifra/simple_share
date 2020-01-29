@@ -2,7 +2,7 @@
     package="com.juanito21.simpleshare">
 
     <application>
-        <provider
+      <!--<provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.adv_provider"
             android:exported="false"
@@ -10,7 +10,7 @@
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/simple_share_provider_paths" />
-        </provider>
+      </provider> -->
 
     </application>
 </manifest>
